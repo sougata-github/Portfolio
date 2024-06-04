@@ -5,14 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-
-const links = [
-  { name: "home", path: "/" },
-  { name: "about", path: "/about" },
-  { name: "projects", path: "/projects" },
-  { name: "skills", path: "/skills" },
-  { name: "contact", path: "/contact" },
-];
+import { links } from "@/lib/data";
 
 const Nav = () => {
   const pathname = usePathname();

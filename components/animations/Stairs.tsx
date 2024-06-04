@@ -48,3 +48,10 @@ const Stairs = () => {
 };
 
 export default Stairs;
+
+/**
+ * When we are on a specific route and we refresh, it animates
+ * accordinly, but when we change the route AnimatePresence
+ * gets triggered and the previous Stairs component is first
+ * unmounted (exit animation) and then the animation takes place.
+ */
