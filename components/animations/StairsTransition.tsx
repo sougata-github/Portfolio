@@ -4,9 +4,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import Stairs from "./Stairs";
 
 import { usePathname } from "next/navigation";
+import { useMediaQuery } from "usehooks-ts";
 
 const StairsTransition = () => {
   const pathname = usePathname();
+
+  const isLargeScreen = useMediaQuery("(min-width: 1024px)");
+
+  if (!isLargeScreen) {
+    return null;
+  }
 
   return (
     <>

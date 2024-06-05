@@ -5,7 +5,8 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import PageTransition from "@/components/animations/PageTransition";
-import StairsTransition from "@/components/animations/StairsTransition";
+import StairsProvider from "@/components/animations/StairsProvider";
+import { cn } from "@/lib/utils";
 
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
@@ -26,9 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetBrains.className}>
+      <body className={cn("scrollbar-hidden", jetBrains.className)}>
         <Header />
-        <StairsTransition />
+        <StairsProvider />
         <PageTransition>
           <main>{children}</main>
         </PageTransition>

@@ -67,6 +67,10 @@
 }
 
 @layer base {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
