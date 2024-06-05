@@ -1,4 +1,8 @@
+import Photo from "@/components/Photo";
+import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
+
+import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -20,13 +24,24 @@ export default function Home() {
             </p>
 
             {/* Socials*/}
-
-            <Button>
-              <span>Download CV</span>
-            </Button>
+            <div className="flex flex-col xl:flex-row items-center gap-8">
+              <Button variant="outline" size="lg" className="flex items-center">
+                <span>Download CV</span>
+                <FiDownload className="ml-2 text-lg" />
+              </Button>
+              <div className="mb-8 xl:mb-0">
+                <Socials
+                  containerStyles="flex gap-6"
+                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                />
+              </div>
+            </div>
           </div>
+
           {/* Hero Image*/}
-          <div>photo</div>
+          <div>
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
