@@ -1,3 +1,4 @@
+import Stats from "@/components/Stats";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <section className="h-full max-xl:mt-4 max-xl:pt-8">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-20">
           {/* Hero Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="h1">
@@ -43,6 +44,7 @@ export default function Home() {
             <Photo />
           </div>
         </div>
+        <Stats />
       </div>
     </section>
   );
