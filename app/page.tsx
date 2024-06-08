@@ -7,7 +7,7 @@ import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <section className="h-full max-xl:mt-4 max-xl:pt-8">
+    <section className="h-full max-xl:pt-8">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-20">
           {/* Hero Text */}
