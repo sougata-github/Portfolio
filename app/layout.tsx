@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("custom-scrollbar", jetBrains.className)}>
+      <body className={cn("scrollbar-hidden", jetBrains.className)}>
         <Header />
         <StairsProvider />
         <PageTransition>
