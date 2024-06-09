@@ -1,6 +1,7 @@
-import Stats from "@/components/Stats";
-import Photo from "@/components/Photo";
-import Socials from "@/components/Socials";
+import Stats from "@/components/home/Stats";
+import Photo from "@/components/home/Photo";
+import Socials from "@/components/home/Socials";
+
 import { Button } from "@/components/ui/button";
 
 import { FiDownload } from "react-icons/fi";

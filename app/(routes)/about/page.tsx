@@ -1,7 +1,7 @@
 "use client";
 
-import Education from "@/components/Education";
-import Introduction from "@/components/Introduction";
+import Education from "@/components/about/Education";
+import Introduction from "@/components/about/Introduction";
 
 import { motion } from "framer-motion";
 

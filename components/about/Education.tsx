@@ -1,5 +1,4 @@
 import { education } from "@/lib/data";
-
 import EducationCard from "./EducationCard";
 
 const Education = () => {
