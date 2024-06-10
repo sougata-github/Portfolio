@@ -6,7 +6,7 @@ import { GrMysql, GrReactjs } from "react-icons/gr";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiMongoose, SiNextdotjs, SiPrisma, SiVercel } from "react-icons/si";
 
-export const frontendSkills = [
+export const skillsData = [
   {
     label: "HTML",
     icon: (
@@ -55,9 +55,6 @@ export const frontendSkills = [
       <TbBrandFramerMotion className="h-8 w-8 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
     ),
   },
-];
-
-export const backendSkills = [
   {
     label: "Node.js",
     icon: (
@@ -88,9 +85,6 @@ export const backendSkills = [
       <SiPrisma className="h-8 w-8 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
     ),
   },
-];
-
-export const tools = [
   {
     label: "Git",
     icon: (
