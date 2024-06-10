@@ -97,10 +97,4 @@ export const skillsData = [
       <IoLogoGithub className="h-8 w-8 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
     ),
   },
-  {
-    label: "Vercel",
-    icon: (
-      <SiVercel className="h-7 w-7 max-lg:w-6 max-lg:h-6 hover:text-accent transition-all" />
-    ),
-  },
 ];
