@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Page = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -19,7 +19,7 @@ const Page = () => {
           ease: "easeIn",
         },
       }}
-      className="flex items-center justify-center pt-12 pb-8 xl:py-0"
+      className="flex flex-col items-center justify-center pt-8 pb-8 xl:px-0"
     >
       <div className="container mx-auto">
         <h2 className="h2 max-xl:text-center">About Me</h2>
@@ -48,7 +48,7 @@ const Page = () => {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

@@ -10,7 +10,7 @@ interface SkillBadgeProps {
   icon: React.ReactNode;
 }
 
-const SkillBadge = ({ label, icon }: SkillBadgeProps) => {
+const Badge = ({ label, icon }: SkillBadgeProps) => {
   return (
     <div className="cursor-pointer p-4 max-lg:p-7 bg-[#24242b] text-white flex items-center justify-center rounded-xl h-[50px] w-[50px] lg:h-[60px] lg:w-[60px]">
       <TooltipProvider>
@@ -25,4 +25,4 @@ const SkillBadge = ({ label, icon }: SkillBadgeProps) => {
   );
 };
 
-export default SkillBadge;
+export default Badge;
