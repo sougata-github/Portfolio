@@ -4,6 +4,7 @@ import {
   SiMongoose,
   SiNextdotjs,
   SiPrisma,
+  SiSocketdotio,
 } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { FaDatabase } from "react-icons/fa";
@@ -14,6 +15,7 @@ import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
 export type ProjectsDataType = {
   id: number;
   title: string;
+  color: string;
   description: string;
   live: string;
   github: string;
@@ -29,6 +31,7 @@ export const projectsData: ProjectsDataType[] = [
   {
     id: 1,
     title: "DevOverFlow",
+    color: "text-orange-500",
     description: "A community-driven Q&A platform for programming enthusiasts.",
     live: "https://devoverflow-next.vercel.app/",
     github: "https://github.com/sougata-github/DevOverFlow",
@@ -70,6 +73,7 @@ export const projectsData: ProjectsDataType[] = [
   {
     id: 2,
     title: "Jotion",
+    color: "text-neutral-500",
     description: "Productivity and note-taking web application.",
     live: "https://jotion-next.vercel.app/",
     github: "https://github.com/sougata-github/Jotion",
@@ -111,7 +115,8 @@ export const projectsData: ProjectsDataType[] = [
   {
     id: 3,
     title: "Team Chat",
-    description: "Full-Stack Discord clone built using Next.js.",
+    color: "text-indigo-500",
+    description: "Full-Stack Discord clone built using Next.js and Socket IO.",
     live: "https://team-chat-efq7.onrender.com/invite/4a8a83a6-f6df-4644-90ee-d2c1093c0411",
     github: "https://github.com/sougata-github/Team-Chat",
     imageUrl: "/images/team-chat-light.png",
@@ -147,11 +152,18 @@ export const projectsData: ProjectsDataType[] = [
           <SiPrisma className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
         ),
       },
+      {
+        label: "Socket IO",
+        icon: (
+          <SiSocketdotio className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
+        ),
+      },
     ],
   },
   {
     id: 4,
-    title: "iPhone 15 Pro",
+    title: "iPhone",
+    color: "text-stone-600",
     description:
       "iPhone 15 Pro landing page built using React, GSAP and Three.js.",
     live: "https://iphone-15-pro-landing-page.vercel.app/",

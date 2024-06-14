@@ -6,6 +6,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/animations/PageTransition";
 import StairsProvider from "@/components/animations/StairsProvider";
+
 import { cn } from "@/lib/utils";
 
 const jetBrains = JetBrains_Mono({
