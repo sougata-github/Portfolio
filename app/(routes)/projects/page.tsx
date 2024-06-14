@@ -52,9 +52,7 @@ const Page = () => {
           <div className="w-full xl:w-[50%] xl:h-[468px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="flex flex-col gap-4">
-                <h1
-                  className={`text-8xl leading-none font-extrabold ${project.color}`}
-                >
+                <h1 className="text-8xl leading-none font-extrabold">
                   {project.id < 10 ? `0${project.id}` : project.id}
                 </h1>
                 <h2 className="h2 font-extrabold tracking-tighter">
