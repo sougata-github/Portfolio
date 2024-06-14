@@ -45,7 +45,7 @@ const Page = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80vh] flex flex-col items-center pt-8 pb-8 xl:px-0"
+      className="min-h-[80vh] flex flex-col items-center py-8"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">

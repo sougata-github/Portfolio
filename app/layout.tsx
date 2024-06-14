@@ -9,6 +9,8 @@ import StairsProvider from "@/components/animations/StairsProvider";
 
 import { cn } from "@/lib/utils";
 
+import { Toaster } from "sonner";
+
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
 
@@ -32,6 +34,7 @@ export default function RootLayout({
         <Header />
         <StairsProvider />
         <PageTransition>
+          <Toaster position="bottom-center" />
           <main>{children}</main>
         </PageTransition>
       </body>
