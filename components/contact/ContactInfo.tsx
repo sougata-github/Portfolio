@@ -14,7 +14,7 @@ const ContactInfo = () => {
           </div>
           <div className="flex-1">
             <p className="text-white/60">{info.label}</p>
-            <h3 className="text-xl max-xl:text-sm max-sm:text-xs max-w-[200px] truncate">
+            <h3 className="text-xl max-xl:text-sm max-sm:text-xs">
               {info.description}
             </h3>
           </div>

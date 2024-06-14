@@ -5,15 +5,15 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
   {
-    icon: <FaGithub className="h-6 w-6" />,
+    icon: <FaGithub className="h-6 w-6 max-md:h-5 max-md:w-5" />,
     path: "https://github.com/sougata-github",
   },
   {
-    icon: <FaXTwitter className="h-6 w-6" />,
+    icon: <FaXTwitter className="h-6 w-6 max-md:h-5 max-md:w-5" />,
     path: "https://twitter.com/sougata_x",
   },
   {
-    icon: <FaLinkedinIn className="h-6 w-6" />,
+    icon: <FaLinkedinIn className="h-6 w-6 max-md:h-5 max-md:w-5" />,
     path: "https://linkedin.com/in/sougata-linkdin",
   },
 ];
