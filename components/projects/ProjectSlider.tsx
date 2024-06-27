@@ -27,12 +27,12 @@ const ProjectSlider = ({
         spaceBetween={30}
         slidesPerView={1}
         onSlideChange={handleSlideChange}
-        className="h-fit cursor-pointer"
+        className="max-sm:h-[570px] md:h-[400px] lg:h-[520px] xl:h-[460px] relative cursor-pointer rounded-xl"
       >
         {projectsData.map((project, index) => (
           <SwiperSlide key={index} className="w-full">
             <Link href={project.live} target="_blank">
-              <div className="relative w-full h-full">
+              <div>
                 <Image
                   height={500}
                   width={500}
