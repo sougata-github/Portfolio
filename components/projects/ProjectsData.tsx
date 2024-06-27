@@ -115,43 +115,37 @@ export const projectsData: ProjectsDataType[] = [
     description: "Full-Stack Discord clone built using Next.js and Socket IO.",
     live: "https://team-chat-efq7.onrender.com/invite/4a8a83a6-f6df-4644-90ee-d2c1093c0411",
     github: "https://github.com/sougata-github/Team-Chat",
-    imageUrl: "/images/team-chat-light.png",
+    imageUrl: "/images/team-chat.png",
     mobileImageUrl: "/project/team-chat-mobile.jpg",
     techStack: [
       {
         label: "Next.js 14",
         icon: (
-          <SiNextdotjs className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
+          <SiNextdotjs className="h-7 w-7 max-lg:h-4 max-lg:w-4 hover:text-accent transition-all" />
         ),
       },
       {
         label: "TypeScript",
         icon: (
-          <BiLogoTypescript className="h-10 w-10 max-lg:w-9 max-lg:h-9 hover:text-accent transition-all" />
+          <BiLogoTypescript className="h-10 w-10 max-lg:w-6 max-lg:h-6 hover:text-accent transition-all" />
         ),
       },
       {
         label: "Tailwind CSS",
         icon: (
-          <RiTailwindCssFill className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
-        ),
-      },
-      {
-        label: "NeonDB",
-        icon: (
-          <FaDatabase className="h-6 w-6 max-lg:w-5 max-lg:h-5 hover:text-accent transition-all" />
+          <RiTailwindCssFill className="h-7 w-7 max-lg:h-5 max-lg:w-5 hover:text-accent transition-all" />
         ),
       },
       {
         label: "Prisma",
         icon: (
-          <SiPrisma className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
+          <SiPrisma className="h-7 w-7 max-lg:h-4 max-lg:w-4 hover:text-accent transition-all" />
         ),
       },
       {
         label: "Socket IO",
         icon: (
-          <SiSocketdotio className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
+          <SiSocketdotio className="h-7 w-7 max-lg:h-4 max-lg:w-4 hover:text-accent transition-all" />
         ),
       },
     ],

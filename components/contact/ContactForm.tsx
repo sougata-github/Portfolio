@@ -59,7 +59,7 @@ const ContactForm = () => {
         className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl max-w-[480px]"
       >
         <h3 className="text-2xl text-accent">Let&apos;s work together</h3>
-        <p className="text-white/60 text-sm max-w-[480px]">
+        <p className="text-white/60 text-[12.5px] max-w-[480px]">
           Feel free to reach out if you&apos;re looking for a developer, have
           any questions, or just want to connect.
         </p>

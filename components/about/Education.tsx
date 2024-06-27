@@ -21,7 +21,7 @@ const Education = () => {
       }}
     >
       <h2 className="h3 max-xl:text-center text-accent">My Education</h2>
-      <div className="max-w-[680px] mt-8 gap-8 grid grid-cols-1 xl:grid-cols-2 max-xl:px-4 max-xl:max-w-[420px]">
+      <div className="max-w-[680px] mt-8 gap-8 grid grid-cols-2 max-md:grid-cols-1 max-xl:px-4 max-xl:w-full max-md:max-w-[400px]">
         {education.map((card, index) => (
           <EducationCard
             key={index}

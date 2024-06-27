@@ -28,7 +28,7 @@ export const education = [
   },
   {
     year: "2021-2023",
-    course: "Bachelor of Technology in Computer Science",
+    course: "B.Tech in Computer Science",
     platform: "University (2 Years Completed)",
   },
   {

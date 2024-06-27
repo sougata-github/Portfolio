@@ -13,11 +13,11 @@ const SliderBtns = ({ containerStyles, btnStyles }: SliderBtn) => {
   return (
     <div className={containerStyles}>
       <button className={btnStyles} onClick={() => swiper.slidePrev()}>
-        <PiCaretLeftBold className="h-5 w-5" />
+        <PiCaretLeftBold className="h-4 w-4" />
       </button>
       <button className={btnStyles}>
         <PiCaretRightBold
-          className="h-5 w-5"
+          className="h-4 w-4"
           onClick={() => swiper.slideNext()}
         />
       </button>

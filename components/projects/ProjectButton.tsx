@@ -20,7 +20,7 @@ const ProjectButton = ({
     <Link href={url} target="_blank">
       <TooltipProvider>
         <Tooltip>
-          <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
+          <TooltipTrigger className="w-[50px] h-[50px] rounded-xl bg-white/5 flex justify-center items-center group">
             {children}
           </TooltipTrigger>
           <TooltipContent className="mb-2 border-none text-accent text-[12.8px] bg-primary">

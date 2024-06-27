@@ -22,7 +22,7 @@ const Page = () => {
       className="flex flex-col items-center justify-center py-8"
     >
       <div className="container mx-auto">
-        <h2 className="h2 max-xl:text-center">About Me</h2>
+        <h1 className="h2 max-xl:text-center">About Me</h1>
         <Tabs
           defaultValue="introduction"
           className="flex flex-col xl:flex-row gap-[60px] mt-10"
@@ -34,7 +34,6 @@ const Page = () => {
           </TabsList>
 
           {/*Content */}
-
           <div className="">
             <TabsContent value="introduction" className="w-full">
               <Introduction />

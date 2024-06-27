@@ -2,37 +2,29 @@
 
 import { motion } from "framer-motion";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-
 import Link from "next/link";
-import Image from "next/image";
 
-import Badge from "@/components/Badge";
 import {
   ProjectsDataType,
   projectsData,
 } from "@/components/projects/ProjectsData";
-import ProjectButton from "@/components/projects/ProjectButton";
+
+import { Button } from "@/components/ui/button";
 
 import { useState } from "react";
-import { useMediaQuery } from "usehooks-ts";
-import SliderBtns from "@/components/projects/SliderBtns";
+
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
+import { ArrowUpRight, Star } from "lucide-react";
+import ProjectSlider from "@/components/projects/ProjectSlider";
 
 const Page = () => {
   const [project, setProject] = useState<ProjectsDataType>(projectsData[0]);
-
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
-  const handleSlideChange = (swiper: { activeIndex: number }) => {
-    //get current slider index
-    const currentIndex = swiper.activeIndex;
-
-    //update project state
-    setProject(projectsData[currentIndex]);
-  };
 
   return (
     <motion.section
@@ -45,76 +37,69 @@ const Page = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80vh] flex flex-col items-center py-8"
+      className="flex flex-col items-center justify-center py-8"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[468px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
-              <div className="flex flex-col gap-4">
-                <h1 className="text-8xl leading-none font-extrabold">
-                  {project.id < 10 ? `0${project.id}` : project.id}
-                </h1>
-                <h2 className="h2 font-extrabold tracking-tighter">
-                  {project.title}
-                </h2>
-                <p className="mt-2 font-medium text-white/60 leading-2 text-lg max-w-[350px]">
-                  {project.description}
-                </p>
-              </div>
+        <h1 className="h2 max-xl:text-center">My Work</h1>
 
-              <div className="">
-                <ul className="flex flex-wrap gap-4 py-4">
-                  {project.techStack.map((tech, index) => (
-                    <Badge key={index} label={tech.label} icon={tech.icon} />
-                  ))}
-                </ul>
+        <div className="flex flex-row max-xl:flex-col-reverse items-center xl:items-start xl:justify-between">
+          {/* Project Info */}
+          <div className="flex flex-col mt-12 xl:mt-24 gap-6">
+            {/* Project Header */}
+            <div className="flex flex-col max-xl:items-center max-xl:text-center gap-6">
+              <h3 className="text-4xl max-sm:text-2xl font-bold">
+                {project.id > 10 ? project.id : `0${project.id}`}{" "}
+                <span className="font-extrabold">{project.title}</span>
+              </h3>
+              <p className="text-white/60 max-sm:max-w-[280px] max-w-[320px] text-base max-sm:text-sm">
+                {project.description}
+              </p>
+            </div>
 
-                <div className="mt-8 flex items-center gap-4">
-                  <ProjectButton url={project.live} content="Live Site">
-                    <BsArrowUpRight className="text-white text-2xl hover:text-accent transition-all h-5 w-5 max-sm:h-4 max-sm:w-4" />
-                  </ProjectButton>
-                  <ProjectButton url={project.github} content="Source Code">
-                    <BsGithub className="text-white text-2xl hover:text-accent transition-all h-6 w-6 max-sm:h-5 max-sm:w-5" />
-                  </ProjectButton>
+            {/* Tech Stack */}
+            <div className="mt-4 flex flex-wrap gap-4 max-w-[340px]">
+              {project.techStack.map((item) => (
+                <div
+                  key={item.label}
+                  className="cursor-pointer p-6 bg-[#24242b] text-white flex items-center justify-center rounded-xl h-[48px] w-[48px]"
+                >
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>{item.icon}</TooltipTrigger>
+                      <TooltipContent className="mb-2 border-none text-accent text-[12px] bg-primary">
+                        {item.label}
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
-              </div>
+              ))}
+            </div>
+
+            {/* Buttons */}
+            <div className="flex gap-4 mt-4 max-xl:justify-center">
+              <Button className="bg-transparent border-[0.5px] border-accent rounded-xl px-4 py-2 group">
+                <Link
+                  target="_blank"
+                  href={project.github}
+                  className="flex gap-2 items-center text-sm text-white group-hover:text-primary transition-all duration-500"
+                >
+                  Star <Star className="h-4 w-4" />
+                </Link>
+              </Button>
+              <Button className="bg-transparent border-[0.5px] border-accent rounded-xl px-4 py-2 group">
+                <Link
+                  target="_blank"
+                  href={project.live}
+                  className="flex gap-[7.5px] items-center text-sm text-white group-hover:text-primary transition-all duration-500"
+                >
+                  Live <ArrowUpRight className="h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
 
-          {/*Swiper Component*/}
-          <div className="w-full xl:w-[50%]">
-            <Swiper
-              spaceBetween={30}
-              slidesPerView={1}
-              onSlideChange={handleSlideChange}
-              className="xl:h-[520px] mb-12 cursor-pointer"
-            >
-              {projectsData.map((project, index) => (
-                <SwiperSlide key={index} className="w-full">
-                  <Link href={project.live} target="_blank">
-                    <div className="h-[460px] relative group flex jutsify-center items-center bg-pink-50/20">
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={project.imageUrl}
-                          fill
-                          quality={100}
-                          className="object-cover"
-                          alt={`${project.title} image`}
-                        />
-                      </div>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              ))}
-
-              <SliderBtns
-                containerStyles="max-sm:hidden flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent text-primary text-[22px] w-[42px] h-[42px] flex justify-center items-center transition-all"
-              />
-            </Swiper>
-          </div>
+          {/* Slider Component*/}
+          <ProjectSlider setProject={setProject} />
         </div>
       </div>
     </motion.section>
