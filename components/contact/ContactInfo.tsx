@@ -6,9 +6,9 @@ import ContactSocials from "./ContactSocials";
 
 const ContactInfo = () => {
   return (
-    <ul className="flex flex-col gap-4 cursor-pointer overflow-hidden">
+    <ul className="flex flex-col gap-8 cursor-pointer overflow-hidden">
       {contactData.map((info, index) => (
-        <li key={index} className="flex items-center gap-8">
+        <li key={index} className="flex items-end gap-8">
           <div className="w-[48px] h-[48px] xl:w-[52px] xl:h-[52px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
             <div className="text-[22px] max-xl:text-[20px]">{info.icon}</div>
           </div>
@@ -21,11 +21,11 @@ const ContactInfo = () => {
         </li>
       ))}
 
-      <div className="flex items-center gap-8">
-        <div className="w-[48px] h-[48px] xl:w-[52px] xl:h-[52px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+      <div className="flex items-end gap-8">
+        <div className="mt-1 w-[48px] h-[48px] xl:w-[52px] xl:h-[52px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
           <FaUser className="text-[22px] max-xl:text-[20px]" />
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <p className="text-white/60">Socials</p>
           <ContactSocials />
         </div>

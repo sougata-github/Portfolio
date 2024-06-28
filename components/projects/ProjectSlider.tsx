@@ -22,12 +22,12 @@ const ProjectSlider = ({
   };
 
   return (
-    <div className="w-full xl:w-[68%] max-xl:mt-12 mt-4">
+    <div className="w-full xl:w-[68%] max-xl:mt-12 mt-4 overflow-hidden">
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
         onSlideChange={handleSlideChange}
-        className="max-sm:h-[570px] md:h-[400px] lg:h-[520px] xl:h-[460px] relative cursor-pointer rounded-xl"
+        className="max-sm:h-[570px] sm:h-[340px] md:h-[400px] lg:h-[520px] xl:h-[460px] relative cursor-pointer rounded-xl"
       >
         {projectsData.map((project, index) => (
           <SwiperSlide key={index} className="w-full">
@@ -60,8 +60,8 @@ const ProjectSlider = ({
 
         {/*Slider Arrows*/}
         <SliderBtns
-          containerStyles="max-sm:hidden flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between"
-          btnStyles="bg-accent hover:bg-accent text-primary text-[22px] w-[42px] h-[42px] flex justify-center items-center transition-all"
+          containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between"
+          btnStyles="bg-accent hover:bg-accent text-primary text-[22px] w-[42px] h-[42px] flex justify-center items-center transition-all max-sm:bg-transparent max-sm:text-accent max-sm:hover:bg-transparent"
         />
       </Swiper>
     </div>

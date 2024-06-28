@@ -1,12 +1,13 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
 
 const socials = [
   {
     icon: (
-      <FaGithub className="h-5 w-5 hover:text-accent transition-all duration-500" />
+      <FiGithub className="h-5 w-5 hover:text-accent transition-all duration-500" />
     ),
     path: "https://github.com/sougata-github",
   },

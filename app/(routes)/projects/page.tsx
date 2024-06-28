@@ -37,7 +37,7 @@ const Page = () => {
           ease: "easeIn",
         },
       }}
-      className="flex flex-col items-center justify-center py-8"
+      className="flex flex-col items-center justify-center pt-8 pb-8 max-xl:pb-20"
     >
       <div className="container mx-auto">
         <h1 className="h2 max-xl:text-center">My Work</h1>

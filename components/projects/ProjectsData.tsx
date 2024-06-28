@@ -33,8 +33,8 @@ export const projectsData: ProjectsDataType[] = [
     description: "A community-driven Q&A platform for programming enthusiasts.",
     live: "https://devoverflow-next.vercel.app/",
     github: "https://github.com/sougata-github/DevOverFlow",
-    imageUrl: "/images/devoverflow-light.png",
-    mobileImageUrl: "/project/devoverflow-mobile.jpg",
+    imageUrl: "/images/projects/devoverflow.png",
+    mobileImageUrl: "/images/projects/devoverflow-mobile.jpg",
     techStack: [
       {
         label: "Next.js 14",
@@ -45,7 +45,7 @@ export const projectsData: ProjectsDataType[] = [
       {
         label: "TypeScript",
         icon: (
-          <BiLogoTypescript className="h-9 w-9 max-lg:h-8 max-lg:w-8 hover:text-accent transition-all" />
+          <BiLogoTypescript className="h-10 w-10 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
         ),
       },
       {
@@ -71,11 +71,12 @@ export const projectsData: ProjectsDataType[] = [
   {
     id: 2,
     title: "Jotion",
-    description: "Productivity and note-taking web application.",
+    description:
+      "Productivity and note-taking web application built using Next.js.",
     live: "https://jotion-next.vercel.app/",
     github: "https://github.com/sougata-github/Jotion",
-    imageUrl: "/images/jotion-1.png",
-    mobileImageUrl: "/project/jotion-mobile.jpg",
+    imageUrl: "/images/projects/jotion.png",
+    mobileImageUrl: "/images/projects/jotion-mobile.jpg",
     techStack: [
       {
         label: "Next.js 14",
@@ -86,7 +87,7 @@ export const projectsData: ProjectsDataType[] = [
       {
         label: "TypeScript",
         icon: (
-          <BiLogoTypescript className="h-9 w-9 max-lg:h-8 max-lg:w-8 hover:text-accent transition-all" />
+          <BiLogoTypescript className="h-10 w-10 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
         ),
       },
       {
@@ -115,37 +116,37 @@ export const projectsData: ProjectsDataType[] = [
     description: "Full-Stack Discord clone built using Next.js and Socket IO.",
     live: "https://team-chat-efq7.onrender.com/invite/4a8a83a6-f6df-4644-90ee-d2c1093c0411",
     github: "https://github.com/sougata-github/Team-Chat",
-    imageUrl: "/images/team-chat.png",
-    mobileImageUrl: "/project/team-chat-mobile.jpg",
+    imageUrl: "/images/projects/team-chat.png",
+    mobileImageUrl: "/images/projects/team-chat-mobile.jpg",
     techStack: [
       {
         label: "Next.js 14",
         icon: (
-          <SiNextdotjs className="h-7 w-7 max-lg:h-4 max-lg:w-4 hover:text-accent transition-all" />
+          <SiNextdotjs className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
         ),
       },
       {
         label: "TypeScript",
         icon: (
-          <BiLogoTypescript className="h-10 w-10 max-lg:w-6 max-lg:h-6 hover:text-accent transition-all" />
+          <BiLogoTypescript className="h-10 w-10 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
         ),
       },
       {
         label: "Tailwind CSS",
         icon: (
-          <RiTailwindCssFill className="h-7 w-7 max-lg:h-5 max-lg:w-5 hover:text-accent transition-all" />
+          <RiTailwindCssFill className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
         ),
       },
       {
         label: "Prisma",
         icon: (
-          <SiPrisma className="h-7 w-7 max-lg:h-4 max-lg:w-4 hover:text-accent transition-all" />
+          <SiPrisma className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
         ),
       },
       {
         label: "Socket IO",
         icon: (
-          <SiSocketdotio className="h-7 w-7 max-lg:h-4 max-lg:w-4 hover:text-accent transition-all" />
+          <SiSocketdotio className="h-7 w-7 max-lg:h-6 max-lg:w-6 hover:text-accent transition-all" />
         ),
       },
     ],
@@ -157,8 +158,8 @@ export const projectsData: ProjectsDataType[] = [
       "iPhone 15 Pro landing page built using React, GSAP and Three.js.",
     live: "https://iphone-15-pro-landing-page.vercel.app/",
     github: "https://github.com/sougata-github/iphone-15-pro-landing-page",
-    imageUrl: "/images/iphone-landing-page.png",
-    mobileImageUrl: "/project/iphone-landing-page-mobile.jpg",
+    imageUrl: "/images/projects/iphone-landing-page.png",
+    mobileImageUrl: "/images/projects/iphone-landing-page-mobile.jpg",
     techStack: [
       {
         label: "React",
@@ -169,7 +170,7 @@ export const projectsData: ProjectsDataType[] = [
       {
         label: "TypeScript",
         icon: (
-          <BiLogoTypescript className="h-10 w-10 max-lg:w-9 max-lg:h-9 hover:text-accent transition-all" />
+          <BiLogoTypescript className="h-10 w-10 max-lg:w-7 max-lg:h-7 hover:text-accent transition-all" />
         ),
       },
       {
