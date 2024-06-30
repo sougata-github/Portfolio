@@ -11,7 +11,6 @@ const Introduction = () => {
       }}
       animate={{
         opacity: 1,
-
         transition: {
           delay: 0.5,
           duration: 0.4,

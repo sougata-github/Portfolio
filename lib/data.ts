@@ -45,8 +45,6 @@ export const education = [
 
 export const introduction = [
   "I am a Frontend Web Developer from India with expertise in React.js, Next.js, TypeScript & Tailwind CSS for creating responsive web applications.",
-
-  "My expertise extends to full-stack development with NextJS, and I'm well-versed in technologies such as React-Router, React Query, Styled Components and advanced React patterns.",
-
+  "My expertise extends to full-stack development with NextJS. I have also worked with databases such as MongoDB and MySQL, as well as tools like Mongoose and Prisma.",
   "Whether it's discussing a project, sharing insights, or just having a good tech chat, I'm always open to new connections and opportunities.",
 ];
